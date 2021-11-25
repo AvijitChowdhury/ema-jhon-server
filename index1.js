@@ -60,5 +60,11 @@ console.log('databaseconnected');
 });
 
 
+app.get('/',(req,res)=>{
+  res.send("Welcome to Avijits Database");
+})
+
+
+
 
 app.listen(process.env.PORT || port);
