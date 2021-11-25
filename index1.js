@@ -1,4 +1,6 @@
 const password="MmDQTmblKvaOjiFY";
+const port = 5000;
+
 var express = require('express');
 var app = express();
 const bodyParser = require('body-parser');
@@ -59,4 +61,4 @@ console.log('databaseconnected');
 
 
 
-app.listen(5000);
+app.listen(process.env.PORT || port);
